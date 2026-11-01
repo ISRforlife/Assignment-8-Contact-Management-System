@@ -1,0 +1,9 @@
+Hash Table Design Memo
+
+For this assignment, I created a contact management system using a hash table instead of Python's built-in dictionary. The main reason I used a hash table is because it allows us to search for contacts quickly without having to go through every name one by one. The hash function takes the contact's name and calculates an index where the information will be stored. This makes searching much faster, especially when there are a lot of contacts in the system.
+
+One thing I had to consider was collisions. This happens when two different names are assigned to the same index. I handled this by using separate chaining with linked lists. Instead of replacing the contact that is already there, the program adds another node to the same index. When searching, the program goes through the linked list until it finds the correct contact. I also made sure that if the same name is entered again, the phone number gets updated instead of creating a duplicate.
+
+I think engineers would choose a hash table when they need to find information quickly. For example, a contact management system or a customer database would benefit from this structure. A regular list might be easier for smaller projects, while a tree could be better when the information needs to stay organized in a specific order.
+
+Overall, this assignment helped me better understand how hash tables work and why choosing the right data structure can make a big difference in a program.
